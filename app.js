@@ -20,7 +20,8 @@ app.use(express.urlencoded({ limit: "100mb", extended: true }));
 app.use(cookieParser());
 app.use(cors({
     origin: ["https://teampoor-motorcycles-parts-and-services.onrender.com"],
-    credentials: true
+    credentials: true,
+    exposedHeaders: ['x-auth-token']
 }));
 
 app.use('/api/v1',users);
