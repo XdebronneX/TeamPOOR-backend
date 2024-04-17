@@ -21,7 +21,7 @@ app.use(cookieParser());
 app.use(cors({
     origin: ["https://teampoor-motorcycles-parts-and-services.onrender.com"],
     credentials: true,
-    exposedHeaders: ['x-auth-token']
+    exposedHeaders: ['Access-Control-Allow-Origin']
 }));
 
 app.use('/api/v1',users);
